@@ -13,7 +13,7 @@ import {
 
 import { drawRect } from './utils/drawRect';
 
-let detectInterval: NodeJS.Timer;
+let detectInterval: ReturnType<typeof setInterval>;
 
 const App = () => {
   const webcamRef = useRef<Webcam>(null);
